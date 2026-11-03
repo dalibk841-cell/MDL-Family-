@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#09090c">
+  <meta name="description" content="MDL FAMILY — one family, one community.">
+  <title>MDL FAMILY | Official Community</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#home"><span class="brand-mark">M</span><span>MDL <b>FAMILY</b></span></a>
+    <nav>
+      <a href="#about">About</a><a href="#games">Games</a><a href="#community">Community</a>
+    </nav>
+    <a class="nav-join" id="navInvite" href="#" target="_blank" rel="noopener">JOIN DISCORD <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> THE OFFICIAL COMMUNITY</div>
+        <h1>MORE THAN<br>A SERVER.<br><em>A FAMILY.</em></h1>
+        <p class="hero-text">Meet players, find your squad, trade, compete and make every game count. Welcome to MDL FAMILY.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" id="heroInvite" href="#" target="_blank" rel="noopener">JOIN THE SERVER <span>↗</span></a>
+          <a class="button button-ghost" href="#community">EXPLORE COMMUNITY</a>
+        </div>
+        <div class="hero-note"><span class="red-line"></span> CONNECT • PLAY • BELONG</div>
+      </div>
+      <div class="hero-art" aria-label="MDL Family graphic">
+        <div class="ring ring-a"></div><div class="ring ring-b"></div>
+        <div class="hero-emblem"><span>MDL</span><small>FAMILY</small></div>
+        <div class="art-caption">EST. FOR THE COMMUNITY</div>
+        <div class="art-cross">✳</div>
+      </div>
+    </section>
+
+    <section class="stats" id="community">
+      <div class="stat"><span class="stat-label">COMMUNITY</span><strong id="memberCount">—</strong><small>SERVER MEMBERS</small></div>
+      <div class="stat"><span class="stat-label">DISCORD STATUS</span><strong class="status-line"><i id="statusDot"></i><span id="statusText">Checking</span></strong><small>BOT CONNECTION</small></div>
+      <div class="stat"><span class="stat-label">OUR MISSION</span><strong>ONE</strong><small>FAMILY, MANY GAMES</small></div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-heading"><span class="eyebrow">01 / WHO WE ARE</span><h2>BUILT BY PLAYERS.<br><em>MADE FOR EVERYONE.</em></h2></div>
+      <p class="section-description">MDL FAMILY brings gamers together in one friendly place. Whether you're here to trade, team up, share clips or discover a new game, there's a place for you.</p>
+    </section>
+
+    <section class="section games-section" id="games">
+      <div class="section-heading"><span class="eyebrow">02 / WHAT WE PLAY</span><h2>CHOOSE YOUR<br><em>NEXT ADVENTURE.</em></h2></div>
+      <div class="game-grid">
+        <article class="game-card game-one"><span class="game-number">01</span><div><small>ADVENTURE • TRADING</small><h3>BLOX FRUITS</h3></div><span class="game-arrow">↗</span></article>
+        <article class="game-card game-two"><span class="game-number">02</span><div><small>COMPETITIVE • ACTION</small><h3>FREE FIRE</h3></div><span class="game-arrow">↗</span></article>
+        <article class="game-card game-three"><span class="game-number">03</span><div><small>MYSTERY • FUN</small><h3>MM2</h3></div><span class="game-arrow">↗</span></article>
+        <article class="game-card game-four"><span class="game-number">04</span><div><small>MORE GAMES • MORE FUN</small><h3>AND MORE...</h3></div><span class="game-arrow">↗</span></article>
+      </div>
+    </section>
+
+    <section class="join-panel">
+      <div><span class="eyebrow">03 / YOUR NEXT MOVE</span><h2>YOUR PEOPLE<br>ARE <em>HERE.</em></h2><p>Join MDL FAMILY and be part of the community.</p></div>
+      <a class="button button-primary button-large" id="bottomInvite" href="#" target="_blank" rel="noopener">JOIN MDL FAMILY <span>↗</span></a>
+      <div class="join-watermark">MDL</div>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#home"><span class="brand-mark">M</span><span>MDL <b>FAMILY</b></span></a><span>ONE FAMILY. ONE COMMUNITY.</span><span>© <span id="year"></span> MDL FAMILY</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
