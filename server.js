@@ -97,8 +97,25 @@ GatewayIntentBits.GuildMembers
   });
 } else {
   console.log("Discord integration is in demo mode.");
-}
+}app.get("/api/community"
+discordClient.on("guildMemberAdd", async (member) => {
+  try {
+    const welcomeChannel = member.guild.channels.cache.find(
+      channel => channel.isTextBased() && channel.name.includes("ترحيب")
+    );
 
+    if (!welcomeChannel) return;
+
+    await welcomeChannel.send(
+      `👋 أهلاً وسهلاً ${member} في **MDL FAMILY** ❤️‍🔥
+
+نتمنى تقضي أحلى الأوقات معانا!
+اقرأ القوانين واستمتع بوقتك 🔥`
+    );
+  } catch (error) {
+    console.error("Welcome error:", error);
+  }
+});
 app.get("/api/community", async (_req, res) => {
   let memberCount = null;
   let serverName = "MDL FAMILY";
