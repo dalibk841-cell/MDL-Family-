@@ -33,9 +33,11 @@ const allowedRoles = new Set([
 if (process.env.DISCORD_BOT_TOKEN && guildId) {
   discordClient = new Client({
     intents: [
-      GatewayIntentBits.Guilds,
-      GatewayIntentBits.GuildMessages,
-      GatewayIntentBits.MessageContent
+     GatewayIntentBits.GuildMessages,
+GatewayIntentBits.MessageContent,
+GatewayIntentBits.GuildMembers 
+      
+  
     ]
   });
 
